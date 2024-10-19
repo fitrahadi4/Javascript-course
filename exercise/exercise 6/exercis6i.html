@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6</title>
+  </head>
+  <body>
+    <script>
+      let random = Math.random();
+      let result = "";
+      let guess = "heads";
+
+      if (random < 0.5) {
+        result = "heads";
+      } else {
+        result = "tails";
+      }
+
+      if (guess === result) {
+        console.log("You win!");
+      } else {
+        console.log("You lose!");
+      }
+    </script>
+  </body>
+</html>

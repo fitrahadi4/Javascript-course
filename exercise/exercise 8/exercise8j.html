@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 8</title>
+  </head>
+  <body>
+    <button onclick="playGame('heads');">heads</button>
+    <button onclick="playGame('tails');">tails</button>
+
+    <script>
+      const score = {
+        wins: 0,
+        loses: 0,
+      };
+
+      function playGame(guess) {
+        let text = "";
+        random = Math.random();
+        result = random < 0.5 ? "heads" : "tails";
+        if (guess === result) {
+          score.wins += 1;
+          text = "You win!";
+        } else {
+          score.loses += 1;
+          text = "You lose!";
+        }
+        console.log(
+          `${text} You're score is: wins = ${score.wins}, loses = ${score.loses}`
+        );
+      }
+
+      let random = 0;
+      let result = 0;
+    </script>
+  </body>
+</html>
