@@ -90,3 +90,12 @@ console.log(price);
 # Penggunaan localstrorage
 
 Pastikan nama variable di localstorage tidak ada yang sama di dalam satu komputer, jangkauan nya 1 komputer, bukan 1 file
+
+
+# Perbedaan document dan window object di DOM
+document itu halaman
+window itu browser, contoh: window.console.log();
+window.document.querySelector();
+
+kita tidak perlu mengetik window karena JavaScript akan otomatis menambahkannya
+                            

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9</title>
+</head>
+<body>
+    <button onclick="pressButton('heads');">heads</button>
+    <button onclick="pressButton('tails');">tails</button>
+    <p class="js-results"></p>
+    <script>
+        function pressButton(value){
+            const resultElement = document.querySelector('.js-results');
+            if(value === 'heads') {
+                resultElement.innerHTML = `You chose: ${value}`;
+            } else {
+                resultElement.innerHTML = `You chose: ${value}`;
+            }
+        }
+    </script>
+</body>
+</html>
