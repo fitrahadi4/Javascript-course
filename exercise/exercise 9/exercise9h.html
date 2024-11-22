@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+</head>
+<body>
+   <input onkeyup="showTextPressed();" class="js-input" type="text">
+   <p class="js-result"></p>
+    <script>
+        function showTextPressed(){
+            const elementText = document.querySelector('.js-input');
+            // console.log(elementText.value);
+            let showText = document.querySelector('.js-result').innerHTML = elementText.value;
+
+        }
+    </script>
+</body>
+</html>
