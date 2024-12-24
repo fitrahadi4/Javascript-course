@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <style>
+        .btn{
+            padding: 11px 16px;
+            font-family: Arial;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .gray {
+            background-color: #E1E1E1;
+        }
+        .black {
+            background-color: #000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changedBtn('gaming')" class="gaming-button btn gray black">Gaming</button>
+    <button onclick="changedBtn('music')" class="music-button btn gray black">Music</button>
+    <button onclick="changedBtn('tech')" class="tech-button btn gray black">Tech</button>
+    <script>
+        // const btnTest = document.querySelector('.gaming-button');
+        // const btnGaming = document.querySelector('.gaming-button');
+        
+        function changedBtn(text) {
+            const btnTest = document.querySelector(`.${text}-button`);
+            if(btnTest.classList.contains('black')){                
+                btnTest.classList.remove('black');
+            } else {
+                btnTest.classList.add('black');
+            }
+        }
+        
+    </script>
+</body>
+</html>
