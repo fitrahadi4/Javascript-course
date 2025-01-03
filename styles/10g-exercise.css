@@ -1,0 +1,15 @@
+.btn{
+    padding: 11px 16px;
+    font-family: Arial;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.black {
+    background-color: #000;
+    color: white;
+}
+.gray {
+    background-color: #E1E1E1;
+    color: black;
+}
